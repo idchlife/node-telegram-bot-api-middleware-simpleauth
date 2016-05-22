@@ -1,0 +1,4 @@
+.idea
+node_modules
+simpleauth.sqlite3
+test.sqlite3
