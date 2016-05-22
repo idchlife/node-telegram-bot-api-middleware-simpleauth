@@ -10,13 +10,10 @@ So, with this middleware you will get it! Beware, this is called `SIMPLEauth` fo
 
 As you know (if not yet, visit mentioned above repository **node-telegram-bot-api-middleware**), middleware is used to extend context of your next processed function callback for message/another middleware. This one does extend your list of middlewares with useful methods, properties for authentication and registration.
 
-## Usage
-For working example you can see examples/working-auth-bot.js
-To test it you need to start it like this:
+## Installation
+    npm i node-telegram-bot-api-middleware-simpleauth --save
 
-    node examples/working-auth-bot.js YOUR_BOT_TOKEN
-    
-### Here is some code with comments that will help you to start
+## Usage
 
 ```js
   // By default, simpleauth will create `simpleauth.sqlite3` file in your folder, 
@@ -76,6 +73,12 @@ To test it you need to start it like this:
     const code = yield this.simpleauth.generateAuthCode();
   });
 ```
+
+### Check example, it will show middleware in action
+For working example you can see examples/working-auth-bot.js
+To test it you need to start it like this:
+
+    node examples/working-auth-bot.js YOUR_BOT_TOKEN
 
 ## You can help with code, ideas and bugs by creating issues and pull requests.
 
